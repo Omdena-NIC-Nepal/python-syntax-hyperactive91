@@ -26,7 +26,6 @@ def conditional_check(number):
     Returns:
         str: "Greater", "Lesser", or "Equal"
     """
-    pass
 
 def loop_sum(n):
     sum=0
@@ -41,7 +40,6 @@ def loop_sum(n):
     Returns:
         int: Sum of numbers
     """
-    pass
 
 def list_operations(numbers):
     sum=0
@@ -59,7 +57,6 @@ def list_operations(numbers):
     Returns:
         tuple: (sum, max, min)
     """
-    pass
 
 def dict_operations(students_dict):
     topstudents=[name for name, marks in students_dict.items() if marks>80]
@@ -73,7 +70,6 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    pass
 
 def set_operations(list1, list2):
     common=(x for x in list1 if x in list2)
@@ -86,7 +82,6 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    pass
 
 def arithmetic_ops(a, b):
     dict={"sum":a+b,"difference":a-b,"product":a*b,"quotient":a/b}
@@ -101,7 +96,6 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
-    pass
 
 def logical_ops(x, y):
     a=x and y
@@ -116,7 +110,6 @@ def logical_ops(x, y):
     Returns:
         dict: Results of logical operations
     """
-    pass
 
 def bitwise_ops(a, b):
     return({"and":a & b,"or":a | b,"xor": a ^ b})
@@ -128,5 +121,4 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    pass
 
