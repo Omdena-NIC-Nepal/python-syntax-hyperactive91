@@ -1,4 +1,7 @@
 def format_string(name, age):
+    name_new = name
+    age_new = age
+    return(f"My name is {name_new} and I am {age_new} years old")
     """
     Create a formatted string using f-strings.
     Args:
@@ -7,9 +10,15 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-    pass
 
 def conditional_check(number):
+    num = number
+    if num>10:
+        return("Greater")
+    elif num==10:
+        return("Equal")
+    else:
+        return("Lesser")
     """
     Check if a number is greater, lesser, or equal to 10.
     Args:
@@ -17,9 +26,13 @@ def conditional_check(number):
     Returns:
         str: "Greater", "Lesser", or "Equal"
     """
-    pass
 
 def loop_sum(n):
+    sum=0
+    for i in range(1,n+1):
+        sum+=i
+    return(sum)
+
     """
     Calculate sum of numbers from 1 to n using a loop.
     Args:
@@ -27,9 +40,16 @@ def loop_sum(n):
     Returns:
         int: Sum of numbers
     """
-    pass
 
 def list_operations(numbers):
+    sum=0
+    for i in numbers:
+        sum+=i
+    maximum=max(numbers)
+    minimum=min(numbers)
+    return(sum,maximum,minimum)
+
+
     """
     Perform operations on a list of numbers.
     Args:
@@ -37,9 +57,12 @@ def list_operations(numbers):
     Returns:
         tuple: (sum, max, min)
     """
-    pass
 
 def dict_operations(students_dict):
+    topstudents=[name for name, marks in students_dict.items() if marks>80]
+    return(topstudents)
+    
+
     """
     Find students with scores above 80.
     Args:
@@ -47,9 +70,10 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    pass
 
 def set_operations(list1, list2):
+    common=(x for x in list1 if x in list2)
+    return(set(common))
     """
     Find common elements between two lists.
     Args:
@@ -58,9 +82,12 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    pass
 
 def arithmetic_ops(a, b):
+    dict={"sum":a+b,"difference":a-b,"product":a*b,"quotient":a/b}
+    return(dict)
+    
+
     """
     Perform arithmetic operations.
     Args:
@@ -69,9 +96,12 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
-    pass
 
 def logical_ops(x, y):
+    a=x and y
+    b=x or y
+    c=not x
+    return({"and":a,"or":b,"not_x":c})
     """
     Perform logical operations.
     Args:
@@ -80,9 +110,9 @@ def logical_ops(x, y):
     Returns:
         dict: Results of logical operations
     """
-    pass
 
 def bitwise_ops(a, b):
+    return({"and":a & b,"or":a | b,"xor": a ^ b})
     """
     Perform bitwise operations.
     Args:
@@ -91,4 +121,4 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    pass
+
